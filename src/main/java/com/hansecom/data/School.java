@@ -5,16 +5,20 @@ public class School {
     protected int age;
     protected boolean isStudent;
     protected double avgScore;
+
     public String getName() {
         return name;
     }
-    public int getAge(){
+
+    public int getAge() {
         return age;
     }
-    public boolean getIsStudent(){
+
+    public boolean getIsStudent() {
         return isStudent;
     }
-    public double getAvgScore(){
+
+    public double getAvgScore() {
         return avgScore;
 
     }
