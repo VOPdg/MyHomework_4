@@ -1,26 +1,11 @@
 package com.hansecom.data;
 
 public class School {
-    protected String name;
-    protected int age;
-    protected boolean isStudent;
-    protected double avgScore;
+    public int number;
+    public String address;
 
-    public String getName() {
-        return name;
+    public School(int number, String address) {
+        this.number = number;
+        this.address = address;
     }
-
-    public int getAge() {
-        return age;
-    }
-
-    public boolean getIsStudent() {
-        return isStudent;
-    }
-
-    public double getAvgScore() {
-        return avgScore;
-
-    }
-
 }

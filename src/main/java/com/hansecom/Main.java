@@ -1,21 +1,20 @@
 package com.hansecom;
 
-import com.hansecom.data.Alisa;
-import com.hansecom.data.Director;
+
+import com.hansecom.data.School;
+import com.hansecom.data.Student;
 
 public class Main {
 
     public static void main(String[] args) {
-        Alisa alisa = new Alisa();
-        Director director = new Director();
-        if (alisa.getIsStudent()) {
-            System.out.println("Will graduate school: " + (alisa.getAge() + 2));
-            System.out.println("The student Name: " + alisa.getName());
-            System.out.println("The avg score: " + alisa.getAvgScore());
-        }
-        if (!director.getIsStudent()) {
-            System.out.println("Age: " + director.getAge());
-            System.out.println("The Name: " + director.getName());
-        }
+        School school = new School(213, "Beletskogo 16");
+
+        Student student = new Student("Alisa", 15, school, 9.8);
+        student.printStudentData();
+        System.out.println("Am I good student? The answer is " + student.isGoodStudent());
+
+        Student student2 = new Student("Vova", 14, school, 7.8);
+        student2.printStudentData();
+        System.out.println("Am I good student? The answer is " + student2.isGoodStudent());
     }
 }
